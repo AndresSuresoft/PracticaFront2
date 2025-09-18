@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semi-collapsible Sidebar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Semi-collapsible</h1>
+        <button class="header__toggle" id="toggle-btn">
+            <i class="fa fa-bars"></i>
+        </button>
+    </header>
+
+    <div class="container">
+        <nav class="navbar" id="navbar">
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <i class="fa fa-dashboard"></i>
+                    <span class="navbar__text">Dashboard</span>
+                </li>
+                <li class="navbar__item">
+                    <i class="fa fa-th"></i>
+                    <span class="navbar__text">Widgets</span>
+                    <span class="badge">new</span>
+                </li>
+                <li class="navbar__item">
+                    <i class="fa fa-bar-chart-o"></i>
+                    <span class="navbar__text">Charts</span>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <h2>Contenido principal</h2>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
