@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio 1</title>
+
+</head>
+
+<body>
+    <h2>Clima de las principales ciudades de Bolivia</h2>
+
+    <!-- Dropdown -->
+    <label for="citySelect">Selecciona La Ciudad</label>
+    <select id="citySelect">
+        <option value="Cochabamba">Cochabamba</option>
+        <option value="La Paz">La Paz</option>
+        <option value="Santa Cruz de la Sierra">Santa Cruz</option>
+        <option value="Sucre">Sucre</option>
+        <option value="Tarija">Tarija</option>
+    </select>
+
+    <!-- Spinner -->
+    <div id="spinner">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Info del clima -->
+    <div id="weather" class="weather-card"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

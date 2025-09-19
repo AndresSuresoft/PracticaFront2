@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 30px;
+    background-image: url(bolivia2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+/* spinner */
+#spinner {
+    display: none;
+    margin: 20px auto;
+}
+
+
+.loader {
+    border: 6px solid #f3f3f3;
+    /* gris claro */
+    border-top: 6px solid #3498db;
+    /* azul */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.weather-card {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+}
+
+img {
+    width: 75px;
+    height: 75px;
+}
+
+select {
+    border: 2px solid #dddddd;
+    background: #eeeeee;
+    padding: 6px;
+    transition: 0.4s;
+    border-radius: 5px;
+    width: 220px;
+
+}
+
+option {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    border: 2px solid #dddddd;
+    background: #eeeeee;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+
+
+option:nth-of-type(odd) {
+    background: white;
+}
+
