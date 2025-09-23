@@ -1,0 +1,43 @@
+$main-color: #2196f3;
+$font-big: 150px;
+$font-medium: 20px;
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .counter__class {
+    font-size: $font-big;
+    color: $main-color;
+  }
+}
+
+
+
+.clic-btn {
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px #1976d2;
+  transition: all 0.2s ease;
+  margin-bottom: 10px;
+
+  &:hover {
+    background-color: #1e88e5;
+  }
+
+  &:active {
+    box-shadow: 0 2px #1976d2;
+    transform: translateY(2px);
+  }
+}
