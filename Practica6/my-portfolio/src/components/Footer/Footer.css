@@ -1,0 +1,36 @@
+
+.footer__section {
+  width: 100%;
+  background-color: var(--section-background);
+  color: var(--text-color);
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer__links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer__links a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer__links a:hover {
+  color: var(--button-hover);
+}
+
+.footer__section {
+  width: 100%;
+  background-color: var(--section-background);
+  padding: 20px;
+  text-align: center;
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

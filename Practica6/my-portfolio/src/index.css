@@ -1,0 +1,26 @@
+:root {
+  --font-main: 'Roboto', sans-serif;
+
+  /* Light theme */
+  --background-color: #f5f5f5;
+  --section-background: #ffffff;
+  --text-color: #333333;
+  --accent-color: #a4c991;
+  --button-hover: #8bb57a;
+}
+
+[data-theme="dark"] {
+  --background-color: #1e1e1e;
+  --section-background: #2c2c2c;
+  --text-color: #f5f5f5;
+  --accent-color: #6fa67f;
+  --button-hover: #5a8b63;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
