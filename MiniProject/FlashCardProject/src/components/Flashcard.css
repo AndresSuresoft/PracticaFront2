@@ -1,0 +1,121 @@
+.flashcard {
+  width: 270px;
+  height: 200px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flashcard-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  padding: 10px;
+
+  /* 🔹 Nuevo wrapper centrado */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Front estilo beige */
+.flashcard-front {
+  background-color: #fef3c7; /* Beige */
+}
+
+/* Back estilo más claro */
+.flashcard-back {
+  background-color: #ede9fe; /* Violeta claro */
+  transform: rotateY(180deg);
+}
+
+
+.flashcard-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Etiquetas */
+.flashcard-tags {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none; /* no rompe el flip */
+}
+
+.flashcard-topic {
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.status-tag {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.status-tag.learned {
+  background-color: #10b981; /* verde */
+}
+
+.status-tag.revision {
+  background-color: #ef4444; /* rojo */
+}
+
+/* Botones en el back */
+.flashcard-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+.flashcard-actions button {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.flashcard-actions button:first-child {
+  background: #3b82f6;
+  color: white;
+}
+.flashcard-actions button:last-child {
+  background: #ef4444;
+  color: white;
+}

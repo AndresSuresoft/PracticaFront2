@@ -1,0 +1,19 @@
+.search-bar {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px;              /* ancho base */
+  transition: border-color 0.2s ease;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #4f46e5;      /* morado al hacer foco */
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    width: 100%;              /* en móvil ocupa todo el ancho */
+  }
+}
