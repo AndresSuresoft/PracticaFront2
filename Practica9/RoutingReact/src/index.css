@@ -1,0 +1,92 @@
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: lightskyblue;
+  gap: 15px;
+  border-radius: 30px;
+  width: 300px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  height: 50px;
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.home-container {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #dbd8ce;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #dbd8ce;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul li a:hover {
+  background-color: lightsteelblue;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: lightskyblue;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+  background-color: deepskyblue;
+}
+
+.book-container {
+  display: flex;
+  width: 40%;
+  padding: 40px;
+  flex-direction: column;
+
+}
+
+.notfound-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+
+}
+
+.book-container ul li {
+  margin-top: 5px;
+}
